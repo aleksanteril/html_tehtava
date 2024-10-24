@@ -83,9 +83,7 @@ section{
 
 section > p {
     background-color: rgba(0, 0, 0, 0.5);
-    margin: 2rem;
-    padding: 2rem 0 2rem 0;
-    border-radius: 2rem;
+    padding: 1.5rem;
 }
 
 .products {
@@ -171,6 +169,10 @@ footer figure {
     }
     main{
         padding: 8rem 5rem 1rem 5rem;
+    }
+    section > p{
+        margin: 2rem;
+        border-radius: 2rem;
     }
     article {
         margin: 0;
