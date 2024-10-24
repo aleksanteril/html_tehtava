@@ -18,42 +18,51 @@ html, body {
 
 header {
     display: flex;
-    width: 100%;
     background-color: #151515;
     position: fixed;
+    width:inherit;
+    max-width: inherit;
 }
 
 h1 {
+    display: flex;
     width: 20%;
-    text-align: left;
+    align-self: center;
+    margin: 0;
+}
+
+h1 img{
+    width: 100%;
 }
 
 nav{
     width: 80%;
+    list-style-type: none;
 }
 
 nav ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: right;
+    margin: 0;
     padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+
 }
 
 nav ul li {
-    margin: 0 1rem 0 0;
     display: flex;
 }
 
 nav ul li a:hover{
-    background-color: lightgray;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 li a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    width: 100%;
-    text-align: center;
-    line-height: 3rem;
     color: hotpink;
+    padding: 2rem 1rem 2rem 1rem;
 }
 
 h2 {
@@ -160,12 +169,13 @@ footer figure {
 }
 
 
-@media screen and (min-width: 900px) {
+
+@media screen and (min-width: 1200px){
     .container {
+        max-width: 85rem;
         width: 80%;
     }
     header {
-        width: 80%;
     }
     main{
         padding: 8rem 5rem 1rem 5rem;
@@ -182,5 +192,19 @@ footer figure {
     footer figure {
         float: right;
     }
+}
 
+
+@media screen and (min-width: 769px) {
+    .container {
+        max-width: 85rem;
+        width: 100%;
+    }
+    section > p{
+        margin: 2rem;
+        border-radius: 2rem;
+    }
+    footer figure {
+        float: right;
+    }
 }
