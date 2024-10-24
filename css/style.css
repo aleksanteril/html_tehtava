@@ -1,0 +1,144 @@
+
+html, body {
+    background: #1e1e1e;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.container {
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+    margin: auto;
+    color: hotpink;
+}
+
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: #151515;
+    position: fixed;
+}
+
+h1 {
+    width: 20%;
+    text-align: left;
+}
+
+nav{
+    width: 80%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: right;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem 0 0;
+    display: flex;
+}
+
+nav ul li a:hover{
+    background-color: lightgray;
+}
+
+li a {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    line-height: 3rem;
+    color: hotpink;
+}
+
+h2 {
+    scroll-margin-top: 8rem;
+    font-size: 3rem;
+}
+
+main {
+    padding: 8rem 0 0 0;
+}
+
+section {
+    text-align: center;
+    padding: 0 0 90rem 0;
+}
+
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+article {
+    width: 100%;
+    background-color: #151515;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: left;
+    margin: 2rem 0 2rem 0;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+article figure {
+    margin: 0;
+}
+
+
+figcaption{
+    font-style: italic;
+    color: #cc5490;
+}
+
+
+
+footer {
+    margin-bottom: 80rem;
+}
+
+footer figure {
+    margin: 0;
+}
+
+footer p {
+    font-style: italic;
+    line-height: 0.5rem;
+}
+
+footer p a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #80345a;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+    color: hotpink;
+}
+
+
+@media screen and (min-width: 811px) {
+    .container {
+        width: 80%;
+    }
+    header {
+        width: 80%;
+    }
+    article {
+        width: 30%;
+    }
+    footer figure {
+        float: right;
+    }
+
+}
