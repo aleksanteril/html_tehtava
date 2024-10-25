@@ -37,6 +37,11 @@ h1 {
     margin: 0;
 }
 
+h1 a {
+    text-decoration: none;
+    color: hotpink;
+}
+
 
 nav{
     width: 100%;
@@ -52,16 +57,18 @@ nav ul {
 }
 
 nav ul li {
+    width: 33%;
     display: flex;
 }
 
 nav ul li a:hover{
     background-color: rgba(0, 0, 0, 0.3);
+    text-decoration: underline;
+    text-decoration-thickness: 0.125rem;
 }
 
 li a {
-    display: flex;
-    align-items: center;
+    width: 100%;
     text-decoration: none;
     color: hotpink;
     padding: 2rem 1rem 2rem 1rem;
@@ -199,6 +206,9 @@ footer figure {
     }
     nav ul{
         justify-content: flex-end;
+    }
+    nav ul li{
+        width: 9rem;
     }
 }
 
