@@ -2,7 +2,8 @@
 
 @font-face{
     font-family: pixel;
-    src: url(font/PressStart2P-Regular.ttf) format('truetype');
+    src: url(PressStart2P-Regular.ttf) format('truetype');
+    font-display: swap;
 }
 
 
@@ -166,7 +167,9 @@ footer figure {
 .information {
     font-style: italic;
     line-height: 0.5rem;
-    margin-right: 1rem;
+    margin: 0;
+    padding-right: 0.5rem;
+    width: 100%;
 }
 
 .information a {
@@ -211,6 +214,9 @@ footer figure {
     }
     nav ul li{
         width: 9rem;
+    }
+    .information{
+        width: auto;
     }
 }
 
